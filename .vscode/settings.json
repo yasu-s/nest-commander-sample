@@ -1,0 +1,17 @@
+{
+  "git.ignoreLimitWarning": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "editor.renderControlCharacters": true,
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+}
