@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 
 @Command({
   name: 'run',
+  options: { isDefault: true },
 })
 export class SampleCommand implements CommandRunner {
   private readonly logger = new Logger(SampleCommand.name);
