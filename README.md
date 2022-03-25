@@ -29,8 +29,7 @@ node dist/main --id=123 hoge hogeee
 
 ## 実行結果
 
-<img width="681" alt="nest-commander" src="https://user-images.githubusercontent.com/2668146/160081743-4d9fca76-9b79-46f1-af28-40676fe2d2f5.png">
-
+<img width="700" alt="nest-commander2" src="https://user-images.githubusercontent.com/2668146/160084007-d9df0ac9-f12c-4df2-b880-5bba4835bcba.png">
 
 ## 参考URL
 
