@@ -23,14 +23,17 @@ yarn
 # ビルド
 yarn build
 
-# 実行
+# SampleCommand実行(デフォルトCommand)
 node dist/main --id=123 hoge hogeee
+node dist/main sample --id=123 hoge hogeee
+
+# Sample2Command実行
+node dist/main sample2 
 ```
 
 ## 実行結果
 
-<img width="681" alt="nest-commander" src="https://user-images.githubusercontent.com/2668146/160081743-4d9fca76-9b79-46f1-af28-40676fe2d2f5.png">
-
+<img width="715" alt="nest-commander3" src="https://user-images.githubusercontent.com/2668146/160101286-5b87ff92-2ab2-4004-b79d-f1ec3275c55a.png">
 
 ## 参考URL
 
