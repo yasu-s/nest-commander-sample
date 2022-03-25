@@ -16,6 +16,17 @@
       "runtimeArgs": ["start:debug"],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Launch - js",
+      "program": "${workspaceFolder}/dist/main.js",
+      "args": ["--id=123", "hoge", "hogeee"],
+      "cwd": "${workspaceFolder}",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
     }
   ]
 }

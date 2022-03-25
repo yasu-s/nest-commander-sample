@@ -20,9 +20,17 @@
 # Node.jsパッケージインストール
 yarn
 
+# ビルド
+yarn build
+
 # 実行
-yarn start
+node dist/main --id=123 hoge hogeee
 ```
+
+## 実行結果
+
+<img width="681" alt="nest-commander" src="https://user-images.githubusercontent.com/2668146/160081743-4d9fca76-9b79-46f1-af28-40676fe2d2f5.png">
+
 
 ## 参考URL
 
