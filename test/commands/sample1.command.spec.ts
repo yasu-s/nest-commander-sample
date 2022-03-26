@@ -1,8 +1,8 @@
 import { ConsoleLogger } from '@nestjs/common';
 import { TestingModule } from '@nestjs/testing';
 import { CommandTestFactory } from 'nest-commander-testing';
-import { AppModule } from '../src/app.module';
-import { AppService } from '../src/services';
+import { AppModule } from '../../src/app.module';
+import { AppService } from '../../src/services';
 
 describe('Sample1Command', () => {
   let commandInstance: TestingModule;
