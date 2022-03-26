@@ -6,10 +6,10 @@ type CommandOptions = {
 };
 
 @Command({
-  name: 'sample',
+  name: 'sample1',
   options: { isDefault: true },
 })
-export class SampleCommand implements CommandRunner {
+export class Sample1Command implements CommandRunner {
   @Option({
     flags: '--id [number]',
   })
@@ -18,7 +18,7 @@ export class SampleCommand implements CommandRunner {
   }
 
   async run(passedParams: string[], options?: CommandOptions): Promise<void> {
-    Logger.log({ passedParams, options }, SampleCommand.name);
+    Logger.log({ passedParams, options }, Sample1Command.name);
     return Promise.resolve();
   }
 }

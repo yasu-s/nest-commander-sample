@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { SampleCommand } from './sample.command';
+import { Sample1Command } from './sample1.command';
 import { Sample2Command } from './sample2.command';
 
 @Module({
   imports: [],
-  providers: [SampleCommand, Sample2Command],
+  providers: [Sample1Command, Sample2Command],
 })
 export class AppModule {}
