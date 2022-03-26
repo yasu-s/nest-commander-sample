@@ -2,7 +2,7 @@
 
 ## 概要
 
-- nest-commander
+- nest-commanderのサンプルコードです。
 
 ## 動作環境
 
