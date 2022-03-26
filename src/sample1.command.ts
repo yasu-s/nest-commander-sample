@@ -7,10 +7,10 @@ type CommandOptions = {
 };
 
 @Command({
-  name: 'sample',
+  name: 'sample1',
   options: { isDefault: true },
 })
-export class SampleCommand implements CommandRunner {
+export class Sample1Command implements CommandRunner {
   constructor(private readonly appService: AppService, private readonly logger: ConsoleLogger) {}
 
   @Option({
@@ -21,8 +21,8 @@ export class SampleCommand implements CommandRunner {
   }
 
   async run(passedParams: string[], options?: CommandOptions): Promise<void> {
-    this.logger.log({ passedParams, options }, SampleCommand.name);
+    this.logger.log({ passedParams, options }, Sample1Command.name);
     const txt = await this.appService.getHello();
-    this.logger.log(txt, SampleCommand.name);
+    this.logger.log(txt, Sample1Command.name);
   }
 }
