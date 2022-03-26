@@ -1,10 +1,9 @@
 import { Module, ConsoleLogger } from '@nestjs/common';
-import { AppService } from './app.service';
-import { Sample1Command } from './sample1.command';
-import { Sample2Command } from './sample2.command';
+import { commands } from './commands';
+import { services } from './services';
 
 @Module({
   imports: [],
-  providers: [AppService, Sample1Command, Sample2Command, ConsoleLogger],
+  providers: [...commands, ...services, ConsoleLogger],
 })
 export class AppModule {}

@@ -1,8 +1,8 @@
 import { ConsoleLogger } from '@nestjs/common';
 import { TestingModule } from '@nestjs/testing';
 import { CommandTestFactory } from 'nest-commander-testing';
-import { AppModule } from '../src/app.module';
-import { AppService } from '../src/app.service';
+import { AppModule } from '../../src/app.module';
+import { AppService } from '../../src/services';
 
 describe('Sample1Command', () => {
   let commandInstance: TestingModule;
@@ -24,7 +24,7 @@ describe('Sample1Command', () => {
   });
 
   it('run method', async () => {
-    await CommandTestFactory.run(commandInstance, ['sample1']);
+    await CommandTestFactory.run(commandInstance, ['sample1', '--id=123']);
     expect(logger.log).toHaveBeenCalledTimes(2);
     expect(appService.getHello).toHaveBeenCalledTimes(1);
   });
