@@ -1,6 +1,5 @@
-import { ConsoleLogger } from '@nestjs/common';
+import { Logger } from '@nestjs/common';
 import { CommandRunner, Command, Option } from 'nest-commander';
-import { AppService } from './app.service';
 
 type CommandOptions = {
   id?: number;
@@ -11,8 +10,6 @@ type CommandOptions = {
   options: { isDefault: true },
 })
 export class SampleCommand implements CommandRunner {
-  constructor(private readonly appService: AppService, private readonly logger: ConsoleLogger) {}
-
   @Option({
     flags: '--id [number]',
   })
@@ -21,8 +18,7 @@ export class SampleCommand implements CommandRunner {
   }
 
   async run(passedParams: string[], options?: CommandOptions): Promise<void> {
-    this.logger.log({ passedParams, options }, SampleCommand.name);
-    const txt = await this.appService.getHello();
-    this.logger.log(txt, SampleCommand.name);
+    Logger.log({ passedParams, options }, SampleCommand.name);
+    return Promise.resolve();
   }
 }
