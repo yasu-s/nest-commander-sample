@@ -9,7 +9,7 @@ describe('Sample1Command', () => {
   let logger: ConsoleLogger;
   let appService: AppService;
 
-  beforeAll(async () => {
+  beforeEach(async () => {
     commandInstance = await CommandTestFactory.createTestingCommand({
       imports: [AppModule],
     })
@@ -25,6 +25,12 @@ describe('Sample1Command', () => {
 
   it('run method', async () => {
     await CommandTestFactory.run(commandInstance, ['sample1']);
+    expect(logger.log).toHaveBeenCalledTimes(2);
+    expect(appService.getHello).toHaveBeenCalledTimes(1);
+  });
+
+  it('isDefault', async () => {
+    await CommandTestFactory.run(commandInstance, []);
     expect(logger.log).toHaveBeenCalledTimes(2);
     expect(appService.getHello).toHaveBeenCalledTimes(1);
   });
