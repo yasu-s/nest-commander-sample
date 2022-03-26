@@ -24,7 +24,7 @@ describe('Sample1Command', () => {
   });
 
   it('run method', async () => {
-    await CommandTestFactory.run(commandInstance, ['sample1']);
+    await CommandTestFactory.run(commandInstance, ['sample1', '--id=123']);
     expect(logger.log).toHaveBeenCalledTimes(2);
     expect(appService.getHello).toHaveBeenCalledTimes(1);
   });

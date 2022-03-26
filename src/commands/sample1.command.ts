@@ -1,6 +1,6 @@
 import { ConsoleLogger } from '@nestjs/common';
 import { CommandRunner, Command, Option } from 'nest-commander';
-import { AppService } from './app.service';
+import { AppService } from '../app.service';
 
 type CommandOptions = {
   id?: number;
