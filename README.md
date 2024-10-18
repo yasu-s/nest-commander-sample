@@ -23,7 +23,7 @@ yarn
 # ビルド
 yarn build
 
-# SampleCommand実行(デフォルトCommand)
+# Sample1Command実行(デフォルトCommand)
 node dist/main --id=123 hoge hogeee
 node dist/main sample1 --id=123 hoge hogeee
 
