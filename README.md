@@ -11,8 +11,8 @@
 
 ## 使用ライブラリ
 
-- nestjs - 8.x
-- nest-commander - 2.4.x
+- nestjs - 10.x
+- nest-commander - 3.15.x
 
 ## 動作確認
 

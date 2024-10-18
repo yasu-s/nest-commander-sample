@@ -10,8 +10,13 @@ type CommandOptions = {
   name: 'sample1',
   options: { isDefault: true },
 })
-export class Sample1Command implements CommandRunner {
-  constructor(private readonly appService: AppService, private readonly logger: ConsoleLogger) {}
+export class Sample1Command extends CommandRunner {
+  constructor(
+    private readonly appService: AppService,
+    private readonly logger: ConsoleLogger,
+  ) {
+    super();
+  }
 
   @Option({
     flags: '--id [number]',
