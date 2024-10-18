@@ -2,11 +2,11 @@
 
 ## 概要
 
-- nest-commanderのサンプルコードです。
+- nest-commanderを使用したサンプルコードです。
 
 ## 動作環境
 
-- Node.js - 16.x
+- Node.js - 20.x
 - yarn - 1.22.x
 
 ## 使用ライブラリ
