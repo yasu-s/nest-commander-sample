@@ -28,7 +28,7 @@ export class Sample1Command extends CommandRunner {
    * @Command.nameで呼び出された時に実行される処理
    */
   async run(passedParams: string[], options?: CommandOptions): Promise<void> {
-    Logger.log({ passedParams, options }, Sample1Command.name);
+    Logger.log({ name: Sample1Command.name, passedParams, options });
     return Promise.resolve();
   }
 }
