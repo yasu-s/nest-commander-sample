@@ -2,17 +2,17 @@
 
 ## 概要
 
-- nest-commanderのサンプルコードです。
+- nest-commanderを使用したサンプルコードです。
 
 ## 動作環境
 
-- Node.js - 16.x
+- Node.js - 20.x
 - yarn - 1.22.x
 
 ## 使用ライブラリ
 
-- nestjs - 8.x
-- nest-commander - 2.4.x
+- nestjs - 10.x
+- nest-commander - 3.15.x
 
 ## 動作確認
 
